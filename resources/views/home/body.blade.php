@@ -1,0 +1,176 @@
+ <div class="container-fluid p-0 mb-4">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class=" text-uppercase mb-3 animated slideInDown" style="color: #fb873f;">Best
+                                    E-learning platform</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Learn Job ready skills from free
+                                    online courses with certificates</h1>
+                                <p class=" text-white mb-4 pb-2">Explore a wide range of courses designed to enhance
+                                    your expertise in technology, business, arts, and more. Start learning today!</p>
+                                <a href="{{route('about page')}}"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="{{route('login')}}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class=" text-uppercase mb-3 animated slideInDown" style="color: #fb873f;">Welcome to
+                                    Saifi Coder</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Interactive Learning Experience
+                                </h1>
+                                <p class=" text-white mb-4 pb-2">Engage with interactive lessons, quizzes, and
+                                    projects. Experience hands-on learning that keeps you motivated and inspired.</p>
+                                <a href="{{route('about page')}}"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="{{route('login')}}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-2 text-center">
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 style="color: #fb873f;">Invest in your professional goals with Saifi Coder</h1>
+                    <p class="mb-5">Get unlimited access to over 90% of courses, Projects, Specializations, and
+                        Professional Certificates on Coursera, taught by top instructors.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3 shadow">
+                        <div class="p-4">
+                            <img src="img/icon1.png" alt="" width="60px" class="mb-4">
+                            <h5 class="mb-3">Learn anything</h5>
+                            <p>Explore any interest or trending topic, take prerequisites, and advance your skills</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3 shadow">
+                        <div class="p-4">
+                            <img src="img/icon2.png" alt="" width="60px" class="mb-4">
+                            <h5 class="mb-3">Save money</h5>
+                            <p>Spend less money on your learning if you plan to take multiple courses this year</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3 shadow">
+                        <div class="p-4">
+                            <img src="img/icon3.png" alt="" width="60px" class="mb-4">
+                            <h5 class="mb-3">Flexible learning</h5>
+                            <p>Learn at your own pace, move between multiple courses, or switch to a different course
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3 shadow">
+                        <div class="p-4">
+                            <img src="img/icon4.png" alt="" width="60px" class="mb-4">
+                            <h5 class="mb-3">Unlimited certificates</h5>
+                            <p>Earn a certificate for every learning program that you complete at no additional cost</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt=""
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start pe-3">About Us</h6>
+                    <h1 class="mb-4" style="color: #fb873f;">Welcome to Saifi Coder</h1>
+                    <p class="mb-4">At Secret Coder, we believe in accessible, innovative learning experiences that
+                        adapt to your schedule and learning style. Join us in embracing the future of education and
+                        unlock your potential with our immersive online courses.</p>
+                    <p class="mb-4"> Welcom to Secret Coder, your gateway to boundless learning opportunities. We're
+                        dedicated to democratizing education, offering a diverse range of courses taught by industry
+                        experts. Our mission is to empower learners worldwide, fostering a community-driven platform
+                        where knowledge knows no limits.</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>Expert Instructors</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Live Interactive Sessions</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Comprehensive Course Catalog</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Community Engagement</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Personalized Learning Paths</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Certification and Recognition</p>
+                        </div>
+                    </div>
+                    <a class="btn text-light py-3 px-5 mt-2" href="{{route('about page')}}">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+
+    <!-- Banner-1 Start -->
+    <div class="container-xxl py-5 pt-5 bg-light">
+        <div class="container">
+            <div class="row g-5 ">
+                <div class="col-lg-6 p-5 wow fadeInUp" data-wow-delay="0.3s">
+
+                    <h1 class="mb-4" style="color: #fb873f;">Explore Free Courses</h1>
+                    <p class="mb-4">Start your online learning journey at Great Learning Academy for free with our
+                        short-term basic courses across various in-demand domains.</p>
+
+                    <a class="btn text-light py-3 px-5 mt-2" href="{{route('login')}}">Start For Free</a>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/banner-1.jpg" alt=""
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
