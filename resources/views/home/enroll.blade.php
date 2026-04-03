@@ -30,7 +30,7 @@
 
     <!-- Marquee -->
     <marquee class="bg-warning text-dark fw-bold py-2" behavior="scroll" direction="left" style="background-color:#fb873f ">
-        📢 Hurry up! Last date to enroll is <span class="text-danger">15 October</span>. Don’t miss the chance!
+        📢  Must Enshure You are  <span class="text-danger">Login </span>  to check your <span class="text-danger">   Enrollment and Instructer</span>   Status
     </marquee>
 
     <!-- Course + Form Section -->
