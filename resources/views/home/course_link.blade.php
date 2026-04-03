@@ -80,7 +80,7 @@
                         </div>
 
                         <div class="d-flex">
-                            <small class="flex-fill text-left p-2 px-2">
+                            <small class="flex-fill text-left p-2 px-1">
                                 <i class="fa fa-clock me-2"></i>
                                 {{ $item->duration }} 
                             </small>
