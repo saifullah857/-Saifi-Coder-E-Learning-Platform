@@ -14,23 +14,14 @@ use App\Models\Category;
 
 
 Route::get('/',[AdminController::class,'home'])->name('home');
-
 Route::get('/course_page',[AdminController::class,'course_page']);
-
 Route::post('/add-course', [AdminController::class, 'add_course'])->name('add_course');
-
 Route::get('/view_course',[AdminController::class,'view_course']);
 
-
-
 Route::get('/course_delete/{id}',[AdminController::class,'course_delete'] );
-
 Route::get('/course_update/{id}',[AdminController::class,'course_update'] );
-
 Route::post('/edit_course/{id}',[AdminController::class,'edit_course'])->name('edit_course');
-
 Route::get('/enroll/{id}',[HomeController::class,'enroll'] );
-
 
 Route::post('/submit_enroll/{id}', [HomeController::class, 'submit_enroll']);
 Route::get('/enrollment', [AdminController::class, 'enrollment']);
@@ -54,7 +45,6 @@ Route::get('/approve_instructer/{id}', [AdminController::class, 'approve_instruc
 Route::get('/reject_instructer/{id}', [AdminController::class, 'reject_instructer']);
 
 Route::get('/delete_emailofinstructer/{id}', [AdminController::class, 'delete_emailofinstructer'])->name('delete_emailofinstructer');
-
 Route::post('/mail/{id}',[AdminController::class,'mail']);
 
 Route::get('/enroll_status', [AdminController::class, 'enroll_status'])->name('enroll_status');
