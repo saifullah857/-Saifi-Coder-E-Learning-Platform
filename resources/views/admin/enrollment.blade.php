@@ -91,8 +91,8 @@
                                     <td>
                                         @if($datakey->image)
                                             <img src="{{ asset('course/'.$datakey->image) }}"
-                                                 alt="Payment Screenshot"
-                                                 style="width:100px;height:80px;object-fit:cover;border-radius:5px;">
+                                                alt="Payment Screenshot"
+                                                style="width:100px;height:80px;object-fit:cover;border-radius:5px;">
                                         @else
                                             <span style="color:gray;">No Image</span>
                                         @endif

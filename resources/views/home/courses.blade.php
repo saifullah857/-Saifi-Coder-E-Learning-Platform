@@ -6,7 +6,7 @@
             </div>
 
             <div class="row g-4 py-2">
-               @foreach ($course as $item)
+                @foreach ($course as $item)
     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
         <div class="course-item shadow">
             <div class="position-relative overflow-hidden text-light image">
@@ -54,19 +54,18 @@
                     Rs. {{ $item->price }}
                 </small>
                 <small class="text-primary py-1 px-2 fw-bold fs-6" style="float:right;">
-                    <a href="{{ url('enroll', $item->id) }}">Enroll Now</a>
+                    @auth
+                        <a href="{{ url('enroll', $item->id) }}">Enroll Now</a>
                     <i class="fa fa-chevron-right me-2 fs-10"></i>
+                    @else
+                        <a href="{{ route('login') }}">Enroll Now</a>
+                    @endauth
+                    
                 </small>
             </div>
         </div>
     </div>
     @endforeach
 </div>
-      
 </div>
 </div>
-
-                
-                
-
-   
