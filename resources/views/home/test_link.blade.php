@@ -26,7 +26,7 @@
                     <h1 class="display-3 text-white animated slideInDown">Student Reviews</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="{{ url('/') }}">Home</a></li>
                             <li class="breadcrumb-item text-white active" aria-current="page">Reviews</li>
                         </ol>
                     </nav>
@@ -57,7 +57,7 @@
                 <div class="testimonial-item text-center">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg"
                         style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">John M.</h5>
+                    <h5 class="mb-0">Saleem Salamat.</h5>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">As a working professional, finding free courses that match my schedule was a
                             game-changer. The courses are engaging, and the community aspect adds immense value. Highly
@@ -67,7 +67,7 @@
                 <div class="testimonial-item text-center">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg"
                         style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">David P.</h5>
+                    <h5 class="mb-0">Asad Ali.</h5>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">I've taken multiple courses here, and each one has been fantastic. The
                             platform's design makes learning enjoyable, and the knowledge gained is invaluable. It's
@@ -77,7 +77,7 @@
                 <div class="testimonial-item text-center">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg"
                         style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Lisa S.</h5>
+                    <h5 class="mb-0">Hira Akbar</h5>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">I'm amazed at the quality of the free courses available. The instructors are
                             experts in their fields, and the interactive lessons make learning a breeze. Thank you for

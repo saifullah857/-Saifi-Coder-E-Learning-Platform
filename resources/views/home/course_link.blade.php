@@ -82,22 +82,29 @@
                                 </small>
                             </div>
 
-                            <div class="d-flex">
-                                <small class="flex-fill text-left p-2 px-1">
+                            <div class="d-flex align-items-center justify-content-between">
+
+                                <!-- Duration -->
+                                <small class="p-2">
                                     <i class="fa fa-clock me-2"></i>
                                     {{ $item->duration }}
                                 </small>
-                                <small class="py-1 px-2 fw-bold fs-6 text-center">
+
+                                <!-- Price (CENTER) -->
+                                <small class="fw-bold fs-6 text-center flex-grow-1">
                                     Rs. {{ $item->price }}
                                 </small>
-                                <small class="text-primary py-1 px-2 fw-bold fs-6" style="float:right;">
+
+                                <!-- Enroll -->
+                                <small class="text-primary p-2 fw-bold fs-6">
                                     @auth
                                         <a href="{{ url('enroll', $item->id) }}">Enroll Now</a>
-                                        <i class="fa fa-chevron-right me-2 fs-10"></i>
                                     @else
                                         <a href="{{ route('login') }}">Enroll Now</a>
                                     @endauth
+                                    <i class="fa fa-chevron-right ms-0"></i>
                                 </small>
+
                             </div>
                         </div>
                     </div>

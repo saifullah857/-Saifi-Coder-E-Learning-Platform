@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-@include('home.header')
+    @include('home.header')
 </head>
+
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
@@ -20,7 +22,7 @@
 
 
     <!-- Carousel Start -->
-   @include('home.body')
+    @include('home.body')
     <!-- Banner-1 End -->
 
 
@@ -30,7 +32,7 @@
     <!-- Categories End -->
 
 
-   <!-- Courses Start -->
+    <!-- Courses Start -->
     @include('home.courses')
     <!-- Banner-2 End -->
 
@@ -39,18 +41,7 @@
     <!-- FAQ End  -->
 
     <!-- Footer Start -->
-   @include('home.footer')
-   </body>
+    @include('home.footer')
+</body>
 
 </html>
-
-
-
-
-   
-
-
-
-
-
-   
