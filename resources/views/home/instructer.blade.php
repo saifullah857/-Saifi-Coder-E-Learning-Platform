@@ -220,86 +220,243 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="{{ route('instructordata') }}" method="POST">
+                    <!-- Replace ONLY your form code inside modal with this -->
+
+                    <form action="{{ route('instructordata') }}" method="POST" class="needs-validation" novalidate
+                        id="instructorForm">
+
                         @csrf
-                        <h5 class="mb-4">Join Saifi-Coder's Global Community of Expert Instructors</h5>
+
+                        <h5 class="mb-4">
+                            Join Saifi-Coder's Global Community of Expert Instructors
+                        </h5>
+
                         <div class="row g-3">
 
+                            <!-- First Name -->
                             <div class="col-md-6">
+
                                 <div class="form-floating">
+
                                     <input type="text" class="form-control" name="first_name"
                                         placeholder="First Name" required>
+
                                     <label>First Name</label>
+
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+
+                                    <div class="invalid-feedback">
+                                        Please enter first name.
+                                    </div>
+
                                 </div>
+
                             </div>
 
+                            <!-- Last Name -->
                             <div class="col-md-6">
+
                                 <div class="form-floating">
+
                                     <input type="text" class="form-control" name="last_name"
                                         placeholder="Last Name" required>
+
                                     <label>Last Name</label>
+
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+
+                                    <div class="invalid-feedback">
+                                        Please enter last name.
+                                    </div>
+
                                 </div>
+
                             </div>
 
+                            <!-- Email -->
                             <div class="col-md-6">
+
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" name="email"
+
+                                    <input type="email" class="form-control" name="email" required
                                         @if (Auth::id()) value="{{ Auth::user()->email }}" @endif>
 
                                     <label>Email</label>
+
+                                    <div class="valid-feedback">
+                                        Valid Email!
+                                    </div>
+
+                                    <div class="invalid-feedback">
+                                        Please enter valid email.
+                                    </div>
+
                                 </div>
+
                             </div>
 
+                            <!-- Phone -->
                             <div class="col-md-6">
+
                                 <div class="form-floating">
-                                    <input type="tel" class="form-control" name="phone"
+
+                                    <input type="tel" class="form-control" name="phone" required
                                         @if (Auth::id()) value="{{ Auth::user()->phone }}" @endif>
+
                                     <label>Phone Number</label>
+
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+
+                                    <div class="invalid-feedback">
+                                        Please enter phone number.
+                                    </div>
+
                                 </div>
+
                             </div>
 
+                            <!-- Degree -->
                             <div class="col-12 py-2">
-                                <label for="degree">What is the highest degree?</label>
+
+                                <label for="degree">
+                                    What is the highest degree?
+                                </label>
+
                                 <select name="degree" class="form-control" required>
+
                                     <option value="">...</option>
-                                    <option value="High School">High School</option>
-                                    <option value="Undergraduate">Undergraduate</option>
-                                    <option value="Graduate">Graduate</option>
-                                    <option value="Post-Graduate">Post-Graduate</option>
+
+                                    <option value="High School">
+                                        High School
+                                    </option>
+
+                                    <option value="Undergraduate">
+                                        Undergraduate
+                                    </option>
+
+                                    <option value="Graduate">
+                                        Graduate
+                                    </option>
+
+                                    <option value="Post-Graduate">
+                                        Post-Graduate
+                                    </option>
+
                                 </select>
+
+                                <div class="valid-feedback">
+                                    Selected successfully!
+                                </div>
+
+                                <div class="invalid-feedback">
+                                    Please select degree.
+                                </div>
+
                             </div>
 
+                            <!-- Subject -->
                             <div class="col-12 py-2">
-                                <label for="subject">What subject would you like to teach?</label>
+
+                                <label for="subject">
+                                    What subject would you like to teach?
+                                </label>
+
                                 <select name="subject" class="form-control" required>
+
                                     <option value="">...</option>
-                                    <option value="Technology">Technology</option>
-                                    <option value="Marketing">Marketing</option>
-                                    <option value="Business">Business</option>
-                                    <option value="Education">Education</option>
+
+                                    <option value="Technology">
+                                        Technology
+                                    </option>
+
+                                    <option value="Marketing">
+                                        Marketing
+                                    </option>
+
+                                    <option value="Business">
+                                        Business
+                                    </option>
+
+                                    <option value="Education">
+                                        Education
+                                    </option>
+
                                 </select>
+
+                                <div class="valid-feedback">
+                                    Selected successfully!
+                                </div>
+
+                                <div class="invalid-feedback">
+                                    Please select subject.
+                                </div>
+
                             </div>
 
+                            <!-- Address -->
                             <div class="col-12">
+
                                 <div class="form-floating">
-                                    <textarea class="form-control" name="address" placeholder="Leave a message here" style="height: 150px"></textarea>
+
+                                    <textarea class="form-control" name="address" placeholder="Leave a message here" style="height: 150px" required></textarea>
+
                                     <label>Address</label>
+
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+
+                                    <div class="invalid-feedback">
+                                        Please enter address.
+                                    </div>
+
                                 </div>
+
                             </div>
 
+                            <!-- Terms -->
                             <div class="col-12">
-                                <div>
-                                    <input type="checkbox" name="terms" required>
-                                    I acknowledge and warrant the truthfulness of the information I submit, and I agree
-                                    with all Terms of service.
+
+                                <div class="form-check">
+
+                                    <input type="checkbox" class="form-check-input" name="terms" id="terms"
+                                        required>
+
+                                    <label class="form-check-label" for="terms">
+
+                                        I acknowledge and warrant the truthfulness
+                                        of the information I submit, and I agree
+                                        with all Terms of service.
+
+                                    </label>
+
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+
                                 </div>
+
                             </div>
 
+                            <!-- Submit -->
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary w-100">Submit</button>
+
+                                <button type="submit" class="btn btn-primary w-100">
+
+                                    Submit
+
+                                </button>
+
                             </div>
 
                         </div>
+
                     </form>
                 </div>
 
