@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-@include('home.header')
+    @include('home.header')
 </head>
+
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
@@ -16,7 +18,7 @@
 
     <!-- Navbar Start -->
     @include('home.nav')
-   
+
     <!-- Header Start -->
     <div class="container-fluid bg-primary py-5 mb-5 page-header">
         <div class="container py-5">
@@ -44,17 +46,17 @@
                 <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden text-center pt-5">
-                            <img class="img-fluid" src="" alt="" style="height: 500px; width: 300px;">
+                            <img class="img-fluid" src="{{ asset('img/sir_rashid.jpeg') }}" alt=""
+                                style="height: 500px; width: 300px;  object-fit: cover; border-radius: 10px;">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a target="_blank" class="btn btn-sm-square btn-primary mx-1"
-                                    href="#"><i
+                                <a target="_blank" class="btn btn-sm-square btn-primary mx-1" href="#"><i
                                         class="fab fa-linkedin"></i></a>
-                                <a target="_blank" class="btn btn-sm-square btn-primary mx-1"
-                                    href="#"><i class="fa fa-envelope"></i></a>
-                                <a target="_blank" class="btn btn-sm-square btn-primary mx-1"
-                                    href="#"><i class="fab fa-github"></i></a>
+                                <a target="_blank" class="btn btn-sm-square btn-primary mx-1" href="#"><i
+                                        class="fa fa-envelope"></i></a>
+                                <a target="_blank" class="btn btn-sm-square btn-primary mx-1" href="#"><i
+                                        class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <div class="text-center p-4">
@@ -66,21 +68,21 @@
                 <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden text-center pt-5">
-                            <img class="img-fluid" src="" alt="" style="height: 500px; width: 300px;">
+                            <img class="img-fluid" src="{{ asset('img/asad.jpeg') }}" alt=""
+                                style="height: 500px; width: 300px;  object-fit: cover; border-radius: 10px;">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
                             <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a target="_blank" class="btn btn-sm-square btn-primary mx-1"
-                                    href="#"><i
+                                <a target="_blank" class="btn btn-sm-square btn-primary mx-1" href="#"><i
                                         class="fab fa-linkedin"></i></a>
-                                <a target="_blank" class="btn btn-sm-square btn-primary mx-1"
-                                    href="#"><i class="fa fa-envelope"></i></a>
-                                <a target="_blank" class="btn btn-sm-square btn-primary mx-1"
-                                    href="#"><i class="fab fa-github"></i></a>
+                                <a target="_blank" class="btn btn-sm-square btn-primary mx-1" href="#"><i
+                                        class="fa fa-envelope"></i></a>
+                                <a target="_blank" class="btn btn-sm-square btn-primary mx-1" href="#"><i
+                                        class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Sir Saleem</h5>
+                            <h5 class="mb-0">Sir Asad</h5>
                             <small>Team Leader</small>
                         </div>
                     </div>
@@ -91,10 +93,4 @@
     <!-- Team End -->
 
     <!-- Footer Start -->
-   @include('home.footer')
-
-
-
-
-
-   
+    @include('home.footer')
