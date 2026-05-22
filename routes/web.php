@@ -57,7 +57,7 @@ Route::get('/dashboard', [UserController::class, 'index'])
 |--------------------------------------------------------------------------
 */
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth','admin'])->group(function () {
 
     /*
     |-----------------------
@@ -84,7 +84,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/approve_enrollment/{id}', [AdminController::class, 'approve_enrollment']);
     Route::get('/reject_enrollment/{id}', [AdminController::class, 'reject_enrollment']);
 
-    Route::get('/enroll_status', [AdminController::class, 'enroll_status'])->name('enroll_status');
 
 
     /*
@@ -125,9 +124,13 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/reject_instructer/{id}', [AdminController::class, 'reject_instructer']);
     Route::get('/delete_emailofinstructer/{id}', [AdminController::class, 'delete_emailofinstructer']);
 
-    Route::get('/instructer_status', [AdminController::class, 'instructer_status'])
-        ->name('instructer_status');
+
 });
+
+Route::get('/instructer_status', [AdminController::class, 'instructer_status'])
+        ->name('instructer_status');
+Route::get('/enroll_status', [AdminController::class, 'enroll_status'])->name('enroll_status');
+
 
 
 /*
