@@ -14,21 +14,21 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
-  public function home()
+    public function home()
 {
     $course = Course::all();        // fetch all courses
     $categories = Category::all();  // fetch all categories
 
     return view('home.index', compact('course', 'categories'));
 }
-   public function course_page(){
-      return view('admin.course_page');
-   }
+    public function course_page(){
+    return view('admin.course_page');
+    }
 
-   public function add_course(Request $request)
+    public function add_course(Request $request)
     {
-   
-            $data=new Course;
+
+    $data=new Course;
 
     $data->title = $request->title;
     $data->rating = $request->rating;
@@ -51,24 +51,24 @@ class AdminController extends Controller
     public function view_course(){
     $data=Course::all();
     return view('admin.view_course',compact('data'));
-   }
+    }
 
-   
 
-   public function course_delete($id){
+
+    public function course_delete($id){
     $data=Course::find($id);
     $data->delete();
     return redirect()->back();
     
-   }
+    }
 
-   public function course_update($id){
+    public function course_update($id){
     $data=Course::find($id);
 
     return view('admin.course_update',compact('data'));
-   }
+    }
 
- public function edit_course(Request $request, $id)
+    public function edit_course(Request $request, $id)
 {
     $data = Course::findOrFail($id);
 
@@ -101,8 +101,8 @@ $data=Booking::all();
 
 public function delete_enrollment($id){
     $data=Booking::find($id);
-   $data->delete();
-   return redirect()->back();
+    $data->delete();
+    return redirect()->back();
 
 }
 
@@ -111,7 +111,8 @@ public function approve_enrollment($id){
 
     if ($booking) {
         $booking->status = 'approve';
-        $booking->save(); // یہ لائن لازمی ہے
+        $booking->save();
+        
     }
 
     return redirect()->back()->with('message', 'Booking Approved Successfully');
@@ -171,7 +172,7 @@ public function delete_category($id)
 }
 
 public function all_messages(){
-     $contact = Contact::all();
+    $contact = Contact::all();
     return view ('admin.all_messages',compact('contact'));
 
 }
@@ -182,10 +183,10 @@ public function delete_email($id){
     $data->delete();
     return redirect()->back();
     
-   }
+    }
 
-   public function send_email($id){
-   $data = Contact::find($id);
+    public function send_email($id){
+    $data = Contact::find($id);
     return view('admin.send_email',compact('data'));
 
 }
@@ -214,7 +215,7 @@ public function instructer_appointment()
 }
 
 public function send_emailtoinstructer($id){
-   $data = Instructor::find($id);
+    $data = Instructor::find($id);
     return view('admin.send_emailtoinstructer',compact('data'));
 
 }
@@ -244,10 +245,10 @@ public function delete_emailofinstructer($id){
     $data->delete();
     return redirect()->back();
     
-   }
-  
-   public function mail(Request $request,$id)
-   {
+    }
+
+    public function mail(Request $request,$id)
+    {
     $data=Contact::find($id);
 
     $details = [
@@ -261,9 +262,9 @@ public function delete_emailofinstructer($id){
     Notification::send($data,new SendEmailNotification($details));
     return redirect()->back();
 
-   }
+    }
 
-   
+
 public function enroll_status()
 {
     $data = Booking::where('email', Auth::user()->email)->get();

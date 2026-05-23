@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     @include('admin.head')
 
@@ -10,7 +11,7 @@
             max-width: 1400px;
             margin: 40px auto;
             text-align: center;
-            
+
             border-collapse: collapse;
         }
 
@@ -61,7 +62,7 @@
                                 <th class="table_head">Email</th>
                                 <th class="table_head">Phone</th>
                                 <th class="table_head">C-Name</th>
-                                <th class="table_head">C-Price</th>
+                                <th class="table_head">Price</th>
                                 <th class="table_head">Enrollment Date</th>
                                 <th class="table_head">Payment Image</th>
                                 <th class="table_head">Status</th>
@@ -89,12 +90,11 @@
                                     </td>
 
                                     <td>
-                                        @if($datakey->image)
-                                            <img src="{{ asset('course/'.$datakey->image) }}"
-                                                alt="Payment Screenshot"
+                                        @if ($datakey->image)
+                                            <img src="{{ asset('course/' . $datakey->image) }}" alt="Payment Screenshot"
                                                 style="width:100px;height:80px;object-fit:cover;border-radius:5px;">
                                         @else
-                                            <span style="color:gray;">No Image</span>
+                                            <span style="color:gray;">Freee Course</span>
                                         @endif
                                     </td>
 
@@ -111,31 +111,27 @@
                                     </td>
 
                                     <td>
-                                        @if($datakey->course && $datakey->course->image)
-                                            <img width="100"
-                                                 src="{{ asset('course/'.$datakey->course->image) }}"
-                                                 alt="Course Image">
+                                        @if ($datakey->course && $datakey->course->image)
+                                            <img width="100" src="{{ asset('course/' . $datakey->course->image) }}"
+                                                alt="Course Image">
                                         @else
-                                            <span style="color:gray;">No Image</span>
+                                            <span style="color:gray;">No Image </span>
                                         @endif
                                     </td>
 
                                     <td>
                                         <a onclick="return confirm('Are you sure to delete this?');"
-                                           class="btn btn-danger"
-                                           href="{{ url('delete_enrollment', $datakey->id) }}">
+                                            class="btn btn-danger" href="{{ url('delete_enrollment', $datakey->id) }}">
                                             Delete
                                         </a>
                                     </td>
 
                                     <td>
-                                        <a class="btn btn-success"
-                                           href="{{ url('approve_enrollment', $datakey->id) }}">
+                                        <a class="btn btn-success" href="{{ url('approve_enrollment', $datakey->id) }}">
                                             Approve
                                         </a>
 
-                                        <a class="btn btn-warning"
-                                           href="{{ url('reject_enrollment', $datakey->id) }}">
+                                        <a class="btn btn-warning" href="{{ url('reject_enrollment', $datakey->id) }}">
                                             Reject
                                         </a>
                                     </td>
@@ -154,4 +150,5 @@
 
     @include('admin.footer')
 </body>
+
 </html>

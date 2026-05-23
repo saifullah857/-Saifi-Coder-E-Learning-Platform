@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::table('booking', function (Blueprint $table) {
             $table->string('status')->default('waiting')->after('phone');
-           
         });
     }
 
