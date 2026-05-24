@@ -33,27 +33,27 @@
 
                                 <div class="mb-3">
                                     <label class="form-label">Greeting</label>
-                                    <input type="text" name="greeting" class="form-control" placeholder="Enter greeting (e.g. Hello John)">
+                                    <input type="text" name="greeting" class="form-control" placeholder="Enter greeting (e.g. Hello John)" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label">Mail Body</label>
-                                    <textarea name="body" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+                                    <textarea name="body" rows="4" class="form-control" placeholder="Enter your message" required></textarea>
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label">Action Text</label>
-                                    <input type="text" name="actiontext" class="form-control" placeholder="e.g. View Details">
+                                    <input type="text" name="actiontext" class="form-control" placeholder="e.g. View Details" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label">Action URL</label>
-                                    <input type="url" name="actionurl" class="form-control" placeholder="https://example.com">
+                                    <input type="url" name="actionurl" class="form-control" placeholder="https://example.com" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label">End Line</label>
-                                    <input type="text" name="endline" class="form-control" placeholder="e.g. Thank you for using our service">
+                                    <input type="text" name="endline" class="form-control" placeholder="e.g. Thank you for using our service" required>
                                 </div>
 
                                 <div class="d-grid">

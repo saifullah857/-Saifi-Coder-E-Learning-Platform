@@ -247,9 +247,14 @@ public function delete_emailofinstructer($id){
     
     }
 
-    public function mail(Request $request,$id)
+    public function mail(Request $request, $id)
+{
+    $data = Instructor::find($id);
+
+    if(!$data)
     {
-    $data=Contact::find($id);
+        return redirect()->back()->with('error','Instructor not found');
+    }
 
     $details = [
         'greeting'   => $request->greeting,
@@ -259,11 +264,13 @@ public function delete_emailofinstructer($id){
         'endline'    => $request->endline,
     ];
 
-    Notification::send($data,new SendEmailNotification($details));
-    return redirect()->back();
+    Notification::send($data, new SendEmailNotification($details));
 
-    }
+    return redirect()->back()->with('success','Email Sent Successfully');
+}
 
+
+    // Enrollment status and Instructer status Routes
 
 public function enroll_status()
 {

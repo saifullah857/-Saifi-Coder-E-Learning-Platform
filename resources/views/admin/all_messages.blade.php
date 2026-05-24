@@ -45,7 +45,7 @@
                                                 </td>
                                                 <td>
                                                     <a class="btn btn-danger btn-sm" href="{{ url('delete_email', $item->id) }}"
-                                                       onclick="return confirm('Are you sure you want to delete this message?')">
+                                                        onclick="return confirm('Are you sure you want to delete this message?')">
                                                         <i class="fa fa-trash"></i> Delete
                                                     </a>
                                                 </td>
