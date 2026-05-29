@@ -7,6 +7,51 @@
 
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+
+    .last-date-bar{
+        width:100%;
+        overflow:hidden;
+        background:#fd8941;
+        color:white;
+        padding:12px 0;
+        font-weight:bold;
+        position:relative;
+        box-shadow:0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .marquee-content{
+        display:inline-block;
+        white-space:nowrap;
+        padding-left:100%;
+        animation:marqueeMove 15s linear infinite;
+        font-size:16px;
+    }
+
+    .highlight-date{
+        color:rgb(255, 13, 0);
+        font-size:18px;
+        margin:0 8px;
+    }
+
+    .marquee-content i{
+        margin:0 10px;
+        color:#ffffff;
+        text-shadow: black
+    }
+
+    @keyframes marqueeMove{
+
+        0%{
+            transform:translateX(0);
+        }
+
+        100%{
+            transform:translateX(-100%);
+        }
+    }
+
+</style>
 </head>
 
 <body>
@@ -39,16 +84,25 @@
     </div>
 
     <!-- Marquee -->
-    <marquee class="bg-warning text-dark fw-bold py-2" behavior="scroll" direction="left"
-        style="background-color:#fb873f">
+    <!-- Last Date Announcement Bar -->
+<div class="last-date-bar">
 
-        📢 Must Enshure You are
-        <span class="text-danger">Login</span>
-        to check your
-        <span class="text-danger">Enrollment and Instructer</span>
-        Status
+    <div class="marquee-content">
 
-    </marquee>
+        <i class="bi bi-calendar-event-fill" style="color: rgb(255, 225, 0)"></i>
+
+        Enrollment Closing Date:
+        <span class="highlight-date">
+            2026-10-15
+        </span>
+
+        <i class="bi bi-exclamation-triangle-fill" style="color:rgb(255, 225, 0)"></i>
+
+        Hurry Up! Submit your enrollment before the deadline.
+
+    </div>
+
+</div>
 
     <!-- Course + Form Section -->
     <div class="container-xxl py-5">

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head> 
-   @include('admin.head')
-  </head>
-  <body>
+
+<head>
+    @include('admin.head')
+</head>
+
+<body>
     @include('admin.header')
     <div class="d-flex align-items-stretch">
-      <!-- Sidebar Navigation-->
-      @include('admin.sidebar')
-      <!-- Sidebar Navigation end-->
-      @include('admin.body')
+        <!-- Sidebar Navigation-->
+        @include('admin.sidebar')
+        <!-- Sidebar Navigation end-->
+        @include('admin.body')
         @include('admin.footer')
-  </body>
+</body>
+
 </html>

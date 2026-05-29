@@ -2,33 +2,39 @@
     /* Table styling */
     .table_deg {
         border: 2px solid white;
-        width: 90%;               /* responsive width */
-        max-width: 1200px;        /* prevent overflow */
-        margin: 40px auto 0;      /* top margin + center horizontally */
+        width: 90%;
+        /* responsive width */
+        max-width: 1200px;
+        /* prevent overflow */
+        margin: 40px auto 0;
+        /* top margin + center horizontally */
         text-align: center;
         padding: 10px;
 
         /* Center the table vertically */
-        position: relative;       /* changed from absolute for better responsiveness */
+        position: relative;
+        /* changed from absolute for better responsiveness */
         /* top: 50%; left: 50%; transform: translate(-50%, -50%); removed for scrollable page */
     }
 
     .table_head {
         background-color: skyblue;
         color: black;
-       padding: 20px;
+        padding: 20px;
         font-weight: bold;
         font-size: 16px;
     }
 
     tr {
         border: 1px solid white;
-       padding: 20px;
+        padding: 20px;
 
     }
-th{
-    padding: 10px;
-}
+
+    th {
+        padding: 10px;
+    }
+
     td {
         padding: 20px;
         color: white;
@@ -42,7 +48,8 @@ th{
 
     /* Optional: hover effect */
     .table_deg tr:hover {
-        background-color: rgba(135, 206, 235, 0.3); /* light skyblue hover */
+        background-color: rgba(135, 206, 235, 0.3);
+        /* light skyblue hover */
     }
 </style>
 
@@ -78,14 +85,14 @@ th{
                                     <td>{{ $item->subject }}</td>
                                     <td>
                                         @if ($item->status == 'approve')
-                                                        <span style="color:skyblue;">Approved</span>
-                                                    @elseif ($item->status == 'rejected')
-                                                        <span style="color:rgb(241, 9, 67);">Rejected</span>
-                                                    @elseif ($item->status == 'waiting')
-                                                        <span style="color:gold;">Waiting</span>
-                                                    @else
-                                                        <span style="color:gray;">Pending</span>
-                                                    @endif
+                                            <span style="color:skyblue;">Approved</span>
+                                        @elseif ($item->status == 'rejected')
+                                            <span style="color:rgb(241, 9, 67);">Rejected</span>
+                                        @elseif ($item->status == 'waiting')
+                                            <span style="color:gold;">Waiting</span>
+                                        @else
+                                            <span style="color:gray;">Pending</span>
+                                        @endif
                                     </td>
                                 </tr>
                             @endforeach
