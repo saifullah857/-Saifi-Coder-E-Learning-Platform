@@ -14,6 +14,12 @@ return new class extends Migration
         Schema::table('booking', function (Blueprint $table) {
             $table->string('image')->nullable()->after('payment_id');
         });
+
+
+
+
+
+        
     }
 
     /**
